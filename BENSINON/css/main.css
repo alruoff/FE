@@ -1,0 +1,6 @@
+.main {
+    /* height:fit-content; */
+    background-color: rgb(255, 255, 255);
+    flex: 10;
+    display: flex;
+}

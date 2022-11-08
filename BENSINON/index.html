@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Refueling</title>
+
+    <link rel="stylesheet" href="./css/footer.css" class="css" />
+    <link rel="stylesheet" href="./css/main.css" class="css" />
+    <link rel="stylesheet" href="./css/menu.css" class="css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,
+    body,
+    .wrapper {
+      height: 100%;
+      /* max-width: 1024px; */
+    }
+    .wrapper {
+      /* width: 100%;
+      height: 100%; */
+      padding: 80px 80px 0 120px;
+      padding-bottom: 0px;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+    }
+    .box1,
+    .box2 {
+      flex: 1;
+    }
+    h1 {
+      font-size: 4rem;
+      width: 400px;
+      line-height: 4rem;
+    }
+    .box1 {
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .button_eg_black {
+      width: 140px;
+      height: 40px;
+      border: none;
+      border-radius: 40px;
+      color: white;
+      background-color: rgb(0, 0, 0);
+      cursor: pointer;
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .text_on_button {
+      font-size: 0.5rem;
+    }
+    img {
+      object-fit: cover;
+    }
+    .box1 > div {
+      margin-top: 60px;
+    }
+    .box1 a {
+      text-decoration: none;
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+      color: black;
+      border: 1px solid;
+      border-color: black;
+      border-radius: 50%;
+      margin-right: 10px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <header class="menu">
+        <a href=""
+          ><figure><img src="./img/logo.jpg" alt="" /></figure
+        ></a>
+        <nav class="menu_2">
+          <!-- <ul> -->
+          <li><a href="">Home</a></li>
+          <li><a href="">Feature</a></li>
+          <li><a href="">Screen</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Question</a></li>
+          <button id="button_eg">Get Started</button>
+          <!-- </ul> -->
+        </nav>
+      </header>
+      <section class="main">
+        <div class="box1">
+          <h1>Refueling a car at your address</h1>
+          <p class="card__text">
+            Delievery service for all types of fuel for your car
+          </p>
+          <div>
+            <button class="button_eg_black">
+              <a href="" class="icon"><i class="lab la-apple"></i></a>
+              <div>
+                <p class="text_on_button">Availabl on the</p>
+                Apple Store
+              </div>
+            </button>
+            <button class="button_eg_black">
+              <i class="lab la-google-play"></i>
+              <div>
+                <p class="text_on_button">Android App on</p>
+                GOOGLE PLAY
+              </div>
+            </button>
+          </div>
+          <div class="icons">
+            <a href="" class="icon"><i class="lab la-instagram"></i></a>
+            <a href="" class="icon"><i class="lab la-facebook-f"></i></a>
+            <a href="" class="icon"><i class="lab la-twitter"></i></a>
+          </div>
+        </div>
+        <div class="box2"><img src="./img/main.jpg" alt="" /></div>
+      </section>
+      <footer class="footer">
+        <div class="card">
+          <img src="./img/ico_clock.jpg" alt="" class="card__logo" />
+          <p class="card__capture">Specified order</p>
+          <p class="card__text">
+            Refueling your car at the time and date you cpecify
+          </p>
+        </div>
+        <div class="card">
+          <img src="./img/ico_punkt.jpg" alt="" class="card__logo" />
+          <p class="card__capture">Delivery</p>
+          <p class="card__text">
+            Refueling is carried out anywhere in the city
+          </p>
+        </div>
+        <div class="card">
+          <img src="./img/ico_card.jpg" alt="" class="card__logo" />
+          <p class="card__capture">Payment types</p>
+          <p class="card__text">Make a payment any way convenient for you</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
