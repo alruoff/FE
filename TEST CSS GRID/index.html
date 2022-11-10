@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+      }
+      header {
+        border: 1px solid black;
+        background-color: blueviolet;
+        height: 300px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      main {
+        border: 1px solid black;
+        background-color: blueviolet;
+        height: auto;
+      }
+
+      .sidebar {
+        border: 1px solid black;
+        background-color: blueviolet;
+        height: auto;
+      }
+      footer {
+        border: 1px solid black;
+        background-color: blueviolet;
+        height: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Header</header>
+      <div class="sidebar">Sidebar</div>
+      <main>Main</main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
