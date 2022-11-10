@@ -7,22 +7,26 @@
     <title>test</title>
 
     <style>
-      * {
+         * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
+      html, body {
+        height: 100%;
+
+      }
       .wrapper {
         height: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr auto; */
         grid-template-rows: 1fr 1fr 1fr;
+
         gap: 10px;
       }
       header {
         border: 1px solid black;
         background-color: blueviolet;
-        height: 300px;
         grid-column-start: 1;
         grid-column-end: 3;
       }
@@ -31,12 +35,14 @@
         border: 1px solid black;
         background-color: blueviolet;
         height: auto;
-      }
 
+
+      }
       .sidebar {
         border: 1px solid black;
         background-color: blueviolet;
         height: auto;
+
       }
       footer {
         border: 1px solid black;
@@ -44,6 +50,17 @@
         height: auto;
         grid-column-start: 1;
         grid-column-end: 3;
+      }
+      @media (max-width: 768px) {
+        .sidebar {
+          display: none;
+        }
+        .wrapper{
+          grid-template-areas:
+              "header header header""
+              "main main main"
+              "footer footer footer"
+        }
       }
     </style>
   </head>
