@@ -14,14 +14,12 @@
       }
       html, body {
         height: 100%;
-
       }
       .wrapper {
         height: 100%;
         display: grid;
         /* grid-template-columns: 1fr auto; */
         grid-template-rows: 1fr 1fr 1fr;
-
         gap: 10px;
       }
       header {
@@ -35,10 +33,11 @@
         border: 1px solid black;
         background-color: blueviolet;
         height: auto;
+        /* grid-auto-fill: column; */
 
 
       }
-      .sidebar {
+      aside {
         border: 1px solid black;
         background-color: blueviolet;
         height: auto;
@@ -52,14 +51,19 @@
         grid-column-end: 3;
       }
       @media (max-width: 768px) {
-        .sidebar {
+        aside {
           display: none;
         }
         .wrapper{
           grid-template-areas:
               "header header header""
               "main main main"
-              "footer footer footer"
+              "footer footer footer";
+              /* gap: 0; */
+        }
+        main {
+          grid-column-start: 1;
+          grid-column-end: 3;
         }
       }
     </style>
@@ -67,7 +71,7 @@
   <body>
     <div class="wrapper">
       <header>Header</header>
-      <div class="sidebar">Sidebar</div>
+      <aside>Sidebar</aside>
       <main>Main</main>
       <footer>Footer</footer>
     </div>
