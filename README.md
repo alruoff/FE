@@ -10,4 +10,4 @@
 
 [Тестовая GRID](https://alruoff.github.io/FE/TEST_GRID/index.html)
 
-[Последняя работа](https://alruoff.github.io/FE/BUILDgi/index.html)
+[Последняя работа](https://alruoff.github.io/FE/BUILD/index.html)
