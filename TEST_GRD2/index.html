@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID TEST</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    .wrapper>div {
+      background: gold;
+      border: 2px solid black;
+      text-align:center;
+      /* display:table-cell; */
+      font-size: 3rem;
+    }
+    .wrapper {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 300px auto 300px;
+      grid-template-rows: 100px auto 100px;
+      gap: 10px;
+      grid-template-areas:
+        "header header header"
+        "sidebar main banner"
+        "footer footer banner";
+    }
+    .header {
+      grid-area: header;
+      background: brown;
+    }
+    .footer {
+      grid-area: footer;
+    }
+    .main {
+        display: inline-flex;
+      grid-area: main;
+    }
+    .sidebar {
+      grid-area: sidebar;
+    }
+    .banner {
+      grid-area: banner;
+    }
+    .button{
+        flex: 1;
+        aspect-ratio: 1;
+        border: 2px solid black;
+        border-radius: 50%;
+        font-size: 1rem;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="header">header</div>
+      <div class="sidebar">sidebar</div>
+      <div class="main"><div class="button">Start etwas</div></div>
+      <div class="banner">banner</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
