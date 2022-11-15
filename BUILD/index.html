@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Build insurance</title>
+    <title>Insurance here</title>
     <style>
       * {
         margin: 0;
@@ -14,55 +14,64 @@
       html,
       body {
         height: 100%;
-        background-color: blue;
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+      :root {
+        --fon_color: #1c30c2;
+        --butt_color:#fcd3e9;
+        --text_color: white;
       }
       .wrapper {
         width: 320px;
         height: 690px;
-        /* background-color: blue; */
-        background: url(PngItem_52405.png);
-        border-radius: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        background-color: var(--fon_color);
+        background-image: url(PngItem_52405.png);
+        background-size: auto;
+        border-radius: 40px;
+        padding-top: 180px;
+        padding-left: 40px;
       }
-      .main {
-        flex: 1;
-      }
-      .text,
-      .text_2 {
-        flex: 1;
-        color: white;
-        padding-left: 35px;
-      }
-      .text {
+
+      .wr__text {
         font-size: 3.5rem;
+        color: var(--text_color);
       }
-      .text_2 {
-        width: 250px;
-        margin: 50px;
-      }
-      a {
+      .wr__text--small {
+        padding-top: 20px;
+        font-size: 1rem;
         width: 200px;
-        height: 50px;
-        background-color: lightpink;
-        margin: 20px;
-        border-radius: 25px;
-        justify-content: center;
       }
+      .wr__button {
+        padding: 16px 32px;
+        border-radius: 32px;
+        border: 2px solid var(--butt_color);
+        background-color: var(--fon_color);
+        color: var(--butt_color);
+        font-weight: 600;
+      }
+      .wr__button:hover {
+        background-color: var(--butt_color);
+        color: var(--fon_color);
+      }
+      #ober {
+        margin-top: 80px;
+      }
+      #unter {
+        margin-top: 20px;
+      }
+      
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <div class="main"></div>
-      <h1 class="text">Smart Insurance here!</h1>
-      <h3 class="text_2">Find all your needs faster than ever</h3>
-      <a href=""><div>New Account</div></a>
-      <a href=""><div>Sign In</div></a>
+      <h1 class="wr__text">Smart Insurance here!</h1>
+      <h3 class="wr__text wr__text--small">
+        Find all your needs faster than ever
+      </h3>
+      <div id="ober"><button class="wr__button">New Account</button></div>
+      <div id="unter"><button class="wr__button">Sign In</button></div>
     </div>
   </body>
 </html>
